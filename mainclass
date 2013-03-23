@@ -1,31 +1,18 @@
-import java.util.*;
-public class linear {
-  
-	Scanner input=new Scanner(System.in);
-	double a,x,b; // ax+b=0
-	public linear()
+
+public class main {
+	static public void main(String[] args)
 	{
-		InputData();
-	}
-	public linear(double a1,double b1)
-	{
-		a=a1;
-		b=b1;
-	}
-	void InputData()
-	{
-		System.out.println("Enter a value for coefficient (a) ");a=input.nextDouble();
+		System.out.println("this is program coded to solve linear equation  "+  
+		                   "ax+b=0");
+		linear linear1 =new linear();
+		linear1.Solution();
+		linear1.printout();
+		System.out.println("\nwithout input ....\n");
+		linear linear2 =new linear(5,8);
+		linear2.Solution();
+		linear2.printout();
 		
-		System.out.println("Enter a value for coefficient (b) ");b=input.nextDouble();
+		
 	}
 
-	void Solution()
-	{
-		x=-b/a;
-	}
-	
-	void printout()
-	{
-		System.out.println("value of x is : "+x);
-	}
 }
