@@ -1,0 +1,31 @@
+import java.util.*;
+public class linear {
+  
+	Scanner input=new Scanner(System.in);
+	double a,x,b; // ax+b=0
+	public linear()
+	{
+		InputData();
+	}
+	public linear(double a1,double b1)
+	{
+		a=a1;
+		b=b1;
+	}
+	void InputData()
+	{
+		System.out.println("Enter a value for coefficient (a) ");a=input.nextDouble();
+		
+		System.out.println("Enter a value for coefficient (b) ");b=input.nextDouble();
+	}
+
+	void Solution()
+	{
+		x=-b/a;
+	}
+	
+	void printout()
+	{
+		System.out.println("value of x is : "+x);
+	}
+}
